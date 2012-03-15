@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">recr</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">People</a></li>
+			  <li><a href="#about">Topics</a></li>
+            </ul>
+			 <p class="navbar-text pull-right" "><a data-toggle="modal" href="#signInForm">
+			 Sign in
+			 </a></p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+<%= yield %>
+
+</body>
+</html>
